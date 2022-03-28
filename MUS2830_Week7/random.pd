@@ -1,0 +1,16 @@
+#N canvas 75 302 744 457 12;
+#X obj 37 28 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 37 74 random 30;
+#X text 114 75 range 0 -30;
+#X obj 37 97 + 45;
+#X floatatom 37 120 5 0 0 0 - - - 0;
+#X text 108 119 45 - 75;
+#X obj 37 145 mtof;
+#X floatatom 37 168 5 0 0 0 - - - 0;
+#X text 88 146 convert midi to freq;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 6 0;
+#X connect 6 0 7 0;

@@ -1,0 +1,57 @@
+#N canvas 68 60 1344 835 12;
+#X obj 78 103 print;
+#X text 136 97 a comment does nothing;
+#X text 23 100 inlet;
+#X msg 78 63 hello;
+#X floatatom 142 60 5 0 0 0 - - - 0;
+#X obj 78 17 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X msg 26 51 1;
+#X obj 56 182 +;
+#X floatatom 38 135 5 0 0 0 - - - 0;
+#X floatatom 100 136 5 0 0 0 - - - 0;
+#X text 86 170 it has two inlets;
+#X floatatom 56 216 5 0 0 0 - - - 0;
+#X text 87 188 hot inlets/ cold inlets;
+#X obj 279 159 + 5;
+#X floatatom 279 195 5 0 0 0 - - - 0;
+#X floatatom 279 128 5 0 0 0 - - - 0;
+#X obj 384 144 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X floatatom 384 236 5 0 0 0 - - - 0;
+#X obj 384 205 +;
+#X text 265 5 challenge: create a counter when you click bang \, it
+adds 1 !;
+#X msg 384 171 1;
+#X obj 384 303 hradio 15 1 0 8 empty empty empty 0 -8 0 10 #fcfcfc
+#000000 #000000 0;
+#X obj 384 111 metro 1000;
+#X obj 384 80 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 111 222 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X floatatom 451 78 5 0 0 0 - - - 0;
+#X obj 384 269 mod 8;
+#X floatatom 384 335 5 0 0 0 - - - 0;
+#X obj 278 289 s something;
+#X obj 452 174 r something;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 0 0;
+#X connect 7 0 11 0;
+#X connect 8 0 7 0;
+#X connect 9 0 7 1;
+#X connect 13 0 14 0;
+#X connect 15 0 13 0;
+#X connect 16 0 20 0;
+#X connect 17 0 26 0;
+#X connect 17 0 28 0;
+#X connect 18 0 17 0;
+#X connect 20 0 18 0;
+#X connect 21 0 27 0;
+#X connect 22 0 16 0;
+#X connect 23 0 22 0;
+#X connect 25 0 22 1;
+#X connect 26 0 21 0;
+#X connect 29 0 18 1;
