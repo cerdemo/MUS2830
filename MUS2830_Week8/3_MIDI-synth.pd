@@ -1,4 +1,4 @@
-#N canvas 371 370 1089 481 12;
+#N canvas 22 73 1892 1020 12;
 #X obj 55 39 notein;
 #X obj 55 104 mtof;
 #X obj 55 128 osc~;
@@ -23,10 +23,10 @@
 #X text 272 79 Key nr;
 #X obj 311 228 osc~;
 #X obj 323 303 *~;
-#X obj 323 327 *~;
+#X obj 326 337 *~;
 #X obj 322 417 dac~;
 #X obj 381 205 f;
-#X obj 458 206 f;
+#X obj 416 205 f;
 #X obj 325 132 t f b b;
 #X text 592 222 Envelope;
 #X msg 577 348 0 \, 1 10 0 \, 0.6 10 10 \, 0.6 100 20 \, 0 150 120
