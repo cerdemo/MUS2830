@@ -1,4 +1,4 @@
-#N canvas 22 73 1892 1020 12;
+#N canvas 265 278 1163 634 12;
 #X obj 55 39 notein;
 #X obj 55 104 mtof;
 #X obj 55 128 osc~;
@@ -41,7 +41,6 @@ a 20ms delay \, stay at 0.6 for 100ms Release: Following a 120ms delay
 #X obj 504 132 unpack f f;
 #X obj 504 81 loadbang;
 #X msg 504 106 10 100;
-#X msg 915 25 \; pd dsp 1;
 #X obj 228 281 simpadd;
 #X floatatom 376 352 5 0 0 0 - - - 0;
 #X obj 323 380 lop~ 250;
@@ -59,6 +58,9 @@ a 20ms delay \, stay at 0.6 for 100ms Release: Following a 120ms delay
 #X obj 460 396 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X obj 416 430 tabwrite~ scope;
+#X msg 924 63 \; pd dsp \$1;
+#X obj 925 28 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
 #X connect 0 0 9 0;
 #X connect 1 0 2 0;
 #X connect 2 0 4 0;
@@ -82,7 +84,7 @@ a 20ms delay \, stay at 0.6 for 100ms Release: Following a 120ms delay
 #X connect 18 0 23 1;
 #X connect 21 0 22 0;
 #X connect 22 0 23 0;
-#X connect 23 0 39 0;
+#X connect 23 0 38 0;
 #X connect 25 0 13 0;
 #X connect 26 0 13 1;
 #X connect 27 0 21 0;
@@ -93,10 +95,11 @@ a 20ms delay \, stay at 0.6 for 100ms Release: Following a 120ms delay
 #X connect 33 1 11 0;
 #X connect 34 0 35 0;
 #X connect 35 0 33 0;
-#X connect 38 0 39 1;
-#X connect 39 0 24 0;
-#X connect 39 0 24 1;
-#X connect 39 0 44 0;
+#X connect 37 0 38 1;
+#X connect 38 0 24 0;
+#X connect 38 0 24 1;
+#X connect 38 0 43 0;
+#X connect 40 0 41 0;
 #X connect 41 0 42 0;
 #X connect 42 0 43 0;
-#X connect 43 0 44 0;
+#X connect 45 0 44 0;
