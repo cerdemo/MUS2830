@@ -31,8 +31,9 @@
 0 1;
 #X obj 26 58 select 0 1, f 11;
 #X msg 63 92 read -resize grains.wav sample2;
-#X obj 218 174 r leftX;
 #X obj 75 378 r leftY;
+#X obj 190 161 scale 0 127 -2 2;
+#X obj 190 137 r leftX;
 #X connect 0 0 1 0;
 #X connect 1 0 7 0;
 #X connect 1 0 4 1;
@@ -54,3 +55,4 @@
 #X connect 22 0 10 0;
 #X connect 22 1 23 0;
 #X connect 23 0 0 0;
+#X connect 26 0 25 0;
